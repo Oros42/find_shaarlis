@@ -1,0 +1,21 @@
+{
+"https://ecirtam.net/shaarlirss/"  : {"type":"river",  "is_active":1},
+"http://river.hoa.ro/" : {"type":"river",  "is_active":1},
+"https://nexen.mkdir.fr/shaarli-river/" : {"type":"river",  "is_active":0},
+"http://petitetremalfaisant.eu/styx/" : {"type":"river",  "is_active":1},
+
+"http://river.hoa.ro/api/" : {"type":"river-api",  "is_active":1},
+"https://nexen.mkdir.fr/shaarli-api/" : {"type":"river-api",  "is_active":0},
+
+"https://shaarli.fr/" : {"type":"shaarlo",  "is_active":1},
+"http://id-libre.org/shaarlo/" : {"type":"shaarlo",  "is_active":1},
+"http://daniel.gorgones.net/shaarlo/" : {"type":"shaarlo",  "is_active":1},
+"http://gilles.wittezaele.fr/shaarlo/" : {"type":"shaarlo",  "is_active":1},
+
+"https://shaarlimages.net/" : {"type":"shaarlimages",  "is_active":1},
+
+"https://nexen.mkdir.fr/shaarli-tv/" : {"type":"shaarli-tv",  "is_active":0},
+
+"http://porneia.free.fr/pub/links/ou-est-shaarli.html" : {"type":"annuaire",  "is_active":1},
+"https://www.shaarli.fr/my.php" : {"type":"annuaire",  "is_active":1}
+}
