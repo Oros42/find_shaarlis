@@ -1,7 +1,7 @@
 Où sont les shaarlis ?
 =============
 
-Fichier JSON qui liste les annuaires de shaarli.  
+Fichier JSON qui liste les annuaires de shaarlis.  
 https://raw.githubusercontent.com/Oros42/find_shaarlis/master/annuaires.json  
 ou  
 https://ecirtam.net/find_shaarlis/annuaires.json  
