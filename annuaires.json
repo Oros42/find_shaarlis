@@ -9,7 +9,6 @@
 
 "https://shaarli.fr/" : {"type":"shaarlo",  "is_active":1},
 "http://id-libre.org/shaarlo/" : {"type":"shaarlo",  "is_active":1},
-"http://daniel.gorgones.net/shaarlo/" : {"type":"shaarlo",  "is_active":1},
 "http://gilles.wittezaele.fr/shaarlo/" : {"type":"shaarlo",  "is_active":1},
 
 "https://shaarlimages.net/" : {"type":"shaarlimages",  "is_active":1},
