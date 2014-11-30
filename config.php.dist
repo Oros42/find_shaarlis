@@ -1,0 +1,14 @@
+<?php
+// input files
+$annuaires_urls = array(
+	'https://ecirtam.net/find_shaarlis/annuaires.json',
+	'https://raw.githubusercontent.com/Oros42/find_shaarlis/master/annuaires.json'
+	);
+
+// output folder
+$output_folder="./out/";
+
+// output file
+$shaarlis_opml = $output_folder.'shaarlis.opml';
+$shaarlis_json = $output_folder.'shaarlis.json';
+?>
