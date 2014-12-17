@@ -17,6 +17,6 @@
 "https://nexen.mkdir.fr/shaarli-tv/" : {"type":"shaarli-tv",  "is_active":0},
 
 "http://porneia.free.fr/pub/links/ou-est-shaarli.html" : {"type":"annuaire",  "is_active":1},
-"https://www.shaarli.fr/my.php" : {"type":"annuaire",  "is_active":1}
+"https://www.shaarli.fr/my.php" : {"type":"annuaire",  "is_active":1},
 "http://shaarferme.etudiant-libre.fr.nf/" : {"type":"annuaire",  "is_active":1}
 }
