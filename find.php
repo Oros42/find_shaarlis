@@ -9,6 +9,7 @@ if(!is_file("config.php")){
 }
 
 include "config.php";
+include "filter.php";
 
 if(!is_dir($output_folder)){
 	mkdir($output_folder);
@@ -17,7 +18,7 @@ if(!is_dir($output_folder)){
 $shaarlis = array();
 
 function clean_xmlUrl($url){
-	return preg_replace('/([^:]{1})\/\//', '$1/', str_replace("index.php", "", str_replace("php/?", "php?", $url)));
+	return preg_replace('/([^:]{1})\/\//', '$1/', str_replace("index.php", "", str_replace("index.php5", "", str_replace("php/?", "php?", $url))));
 }
 
 function clean_htmlUrl($url){
@@ -38,12 +39,23 @@ function clean_htmlUrl($url){
  */
 function addViaOpml($URL) {
 	global $shaarlis;
+	global $filter;
 	$body = @file_get_contents($URL);
 	if(!empty($body)) {
 		$xml = @simplexml_load_string($body);
 		foreach ($xml->body->outline as $value) {
 			$attributes = $value->attributes();
-			$shaarlis[clean_xmlUrl((string)$attributes->xmlUrl)] = array('text'=> (string)$attributes->text, 'htmlUrl'=> clean_htmlUrl((string)$attributes->htmlUrl));
+			$xmlUrl = clean_xmlUrl((string)$attributes->xmlUrl);
+			if(!in_array($xmlUrl, $filter)){
+				if(substr($xmlUrl, 0,5)=="https"){
+					if(isset($shaarlis["http".substr($xmlUrl,5)])) {
+						unset($shaarlis["http".substr($xmlUrl,5)]);
+					}
+				}
+				if(!(substr($xmlUrl, 0,5)=="http:" && isset($shaarlis["https:".substr($xmlUrl,5)]) )){
+					$shaarlis[$xmlUrl] = array('text'=> (string)$attributes->text, 'htmlUrl'=> clean_htmlUrl((string)$attributes->htmlUrl));
+				}
+			}
 		}
 	}
 }
@@ -135,7 +147,7 @@ if(!empty($annuaires)){
 	if(!empty($shaarlis)){
 		outputOPML();
 		outputJSON();
+		echo "Nb shaarlis : ".count($shaarlis)."\n";
 	}
 }
-
 ?>
