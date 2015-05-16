@@ -23,9 +23,10 @@ Générer la liste des shaarlis
 ```
 php find.php
 ```
-Cela va créer 2 fichiers dans ./out/ avec la liste de tout les shaarlis trouvés :  
+Cela va créer 2-3 fichiers dans ./out/ avec la liste de tout les shaarlis trouvés :  
 - shaarlis.json  
-- shaarlis.opml  
+- shaarlis.opml 
+- shaarlis_HS.json si des shaarlis HS sont trouvés  
   
 Ajout, modification ou suppression ?
 ====================================
@@ -33,4 +34,4 @@ Ajout, modification ou suppression ?
 Envoyez un mail à shaarli [ at ] ecirtam.net  
   
   
-Oros le 15/11/2014
+Oros le 16/05/2015

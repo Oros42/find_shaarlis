@@ -8,7 +8,8 @@ $annuaires_urls = array(
 // output folder
 $output_folder="./out/";
 
-// output file
+// output files
 $shaarlis_opml = $output_folder.'shaarlis.opml';
 $shaarlis_json = $output_folder.'shaarlis.json';
+$shaarlis_HS_json = $output_folder.'shaarlis_HS.json';
 ?>

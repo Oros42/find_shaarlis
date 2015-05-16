@@ -101,5 +101,10 @@ $filter=array(
 	/* HS */ 
 	"https://hamadr.fr/shaarli/?do=rss",
 
+	/* HS. New : http://jcfrog.com/shaarli41/ */
+	"http://jcfrog.com/shaarli/?do=rss",
+
+	/* Duplicate with http://shaarli.warriordudimanche.net/ */
+	"http://www.warriordudimanche.net/shaarli/?do=rss",
 	);
 ?>
