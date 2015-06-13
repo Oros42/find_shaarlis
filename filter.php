@@ -106,5 +106,8 @@ $filter=array(
 
 	/* Duplicate with http://shaarli.warriordudimanche.net/ */
 	"http://www.warriordudimanche.net/shaarli/?do=rss",
+
+	/* real link  https://shaarli.dimtion.fr/?do=rss */
+	"https://dimtion.taupincretin.com/shaarli/?do=rss",
 	);
 ?>

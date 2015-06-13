@@ -156,28 +156,32 @@ function addViaOpml($URL) {
 	$body = my_file_get_contents($URL);
 	if(!empty($body)) {
 		$xml = @simplexml_load_string($body);
-		foreach ($xml->body->outline as $value) {
-			$attributes = $value->attributes();
-			$xmlUrl = clean_xmlUrl((string)$attributes->xmlUrl);
-			if(!in_array($xmlUrl, $filter) && empty($shaarlis[$xmlUrl]) && empty($shaarlis_HS[$xmlUrl])){
-				if(substr($xmlUrl, 0,5)=="https"){
-					if(isset($shaarlis["http".substr($xmlUrl,5)])) {
-						unset($shaarlis["http".substr($xmlUrl,5)]);
+		if(!empty($xml)){
+			foreach ($xml->body->outline as $value) {
+				$attributes = $value->attributes();
+				$xmlUrl = clean_xmlUrl((string)$attributes->xmlUrl);
+				if(!in_array($xmlUrl, $filter) && empty($shaarlis[$xmlUrl]) && empty($shaarlis_HS[$xmlUrl])){
+					if(substr($xmlUrl, 0,5)=="https"){
+						if(isset($shaarlis["http".substr($xmlUrl,5)])) {
+							unset($shaarlis["http".substr($xmlUrl,5)]);
+						}
 					}
-				}
-				if(!(substr($xmlUrl, 0,5)=="http:" && isset($shaarlis["https:".substr($xmlUrl,5)]) )){
-					$msg=is_HS($xmlUrl);
-					if($msg==""){
-						// OK
-						$shaarlis[$xmlUrl] = array('text'=> (string)$attributes->text, 'htmlUrl'=> clean_htmlUrl((string)$attributes->htmlUrl));
-					}else{
-						// Error
-						$msg['text']=(string)$attributes->text;
-						$msg['htmlUrl']=clean_htmlUrl((string)$attributes->htmlUrl);
-						$shaarlis_HS[$xmlUrl] = $msg;
+					if(!(substr($xmlUrl, 0,5)=="http:" && isset($shaarlis["https:".substr($xmlUrl,5)]) )){
+						$msg=is_HS($xmlUrl);
+						if($msg==""){
+							// OK
+							$shaarlis[$xmlUrl] = array('text'=> (string)$attributes->text, 'htmlUrl'=> clean_htmlUrl((string)$attributes->htmlUrl));
+						}else{
+							// Error
+							$msg['text']=(string)$attributes->text;
+							$msg['htmlUrl']=clean_htmlUrl((string)$attributes->htmlUrl);
+							$shaarlis_HS[$xmlUrl] = $msg;
+						}
 					}
 				}
 			}
+		}else{
+			print_msg("XML error with $URL", true);
 		}
 	}
 }
@@ -250,7 +254,11 @@ if(!empty($annuaires)){
 					break;
 
 				case 'shaarlo' :
-					addViaOpml($url."opml.php?mod=opml");
+					if($url=="https://shaarli.fr/"){
+						addViaOpml($url."opml.php");
+					}else{
+						addViaOpml($url."opml.php?mod=opml");
+					}
 					break;
 
 				case 'shaarlimages' :
