@@ -8,7 +8,7 @@
 "https://nexen.mkdir.fr/shaarli-api/" : {"type":"river-api",  "is_active":0},
 "http://shaarli-api.ecirtam.net/" : {"type":"river-api",  "is_active":1},
 
-"https://shaarli.fr/" : {"type":"shaarlo",  "is_active":1},
+"https://shaarlo.fr/" : {"type":"shaarlo",  "is_active":1},
 "http://id-libre.org/shaarlo/" : {"type":"shaarlo",  "is_active":1},
 "http://gilles.wittezaele.fr/shaarlo/" : {"type":"shaarlo",  "is_active":1},
 
