@@ -109,5 +109,9 @@ $filter=array(
 
 	/* real link  https://shaarli.dimtion.fr/?do=rss */
 	"https://dimtion.taupincretin.com/shaarli/?do=rss",
+
+	/* new link http://shaarli.kentaro.be/?do=rss */
+	"http://katie.ktdev.info?do=rss",
+	"http://katie.ktdev.info/?do=rss",
 	);
 ?>
