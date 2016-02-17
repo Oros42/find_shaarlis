@@ -113,5 +113,72 @@ $filter=array(
 	/* new link http://shaarli.kentaro.be/?do=rss */
 	"http://katie.ktdev.info?do=rss",
 	"http://katie.ktdev.info/?do=rss",
+
+	/* new link  https://gilles.wittezaele.fr/liens/?do=rss */
+	"http://gilles.wittezaele.fr/links/?do=rss",
+
+	/* new link http://shaarli.sebw.info/?do=rss */
+	"http://sebw.info?do=rss",
+
+	/* new link https://yggz.org/Shaarli/?do=rss */
+	"https://shaarli.yggz.org/?do=rss",
+
+	/* real link http://shaarli.matronix.fr/?do=rss */
+	"https://shaarli.matronix.fr/?do=rss",
+
+	/* HS */
+	"http://florian1.tk/shaarli/?do=rss",
+	"http://martin-thepig.info.cm/sharlii/?do=rss",
+	"http://etnadji.web4me.fr/links/?do=rss",
+	"http://tech-services.fr/shartech/?do=rss",
+	"http://hamadr.fr/shaarli/?do=rss",
+	"http://gbovyn.be/shaarli/?do=rss",
+	"http://ex0artefact.eu/ahpuch/?do=rss",
+	"http://akrilon.free.fr/shaarly/?do=rss",
+	"https://links.khrogos.info/?do=rss",
+	"http://raphael.nicola.free.fr/Shaarli/?do=rss",
+	"https://leomaradan.com/liens/?do=rss",
+	"https://tiger-222.fr/shaarli/?do=rss",
+	"http://neosting.net/links/?do=rss",
+	"https://shaarli.amaury.carrade.eu/?do=rss",
+	"http://hemltreppler.net/shaarli/?do=rss",
+	"http://liens.sam7blog42.fr/?do=rss",
+	"https://florian1.tk/shaarli/?do=rss",
+	"http://shaarlo.fr/shaarli/?do=rss",
+	"http://links.khrogos.info/?do=rss",
+	"http://links.libox.fr/?do=rss",
+	"http://tiger-222.fr/shaarli/?do=rss",
+	"http://martin-thepig.info.cm/shaarli/?do=rss",
+	"https://gilles.wittezaele.fr/links/?do=rss",
+	"http://www.communaute-sla.org/shaarli/?do=rss",
+	"https://shaarli.twyk.org/?do=rss",
+	"https://ntimeu.fr/links/?do=rss",
+	"https://shaarli.yggz.org/?do=rss",
+	"http://www.slobberbone.net/shaarli/?do=rss",
+	"http://biniouland.free.fr/Shaarli/?do=rss",
+	"http://c3p0o.org/links?do=rss",
+	"http://www.davidsound.ovh/Shaarli?do=rss",
+	"https://www.davidsound.ovh/Shaarli/?do=rss",
+	"http://user23.net/links/?do=rss",
+	"https://www.lemarsu.org/?do=rss",
+	"http://aurelien.rocsaliere.org/découpages/?do=rss",
+	"https://bookmarks.cdetc.fr/?do=rss",
+	"http://www.famille-boucher.org/links/?do=rss",
+	"https://geekz0ne.fr/shaarli-gaming/?do=rss",
+	"https://trooper.fr/shaarli/?do=rss",
+	"https://maxthon4.me/Shaarli/?do=rss",
+	"https://links.pihair.fr/?do=rss",
+	"https://pixelcafe.fr/links/?do=rss",
+	"http://tools.mecton.info/shaarli/?do=rss",
+	"https://oniricorpe.eu/links/?do=rss",
+	"https://plakateck.no-ip.org/shaarli/?do=rss",
+	"https://shaarli.aegirs.fr/?do=rss",
+	"https://www.lincruste.com/shaarli/?do=rss",
+	"https://lincruste.com/shaarli/?do=rss",
+	"http://colibri-libre.org/liens/?do=rss",
+	"https://shaarli.youm.org/?do=rss",
+	"http://shaarli.nemocorp.info/?do=rss",
+	"http://links.gilliek.ch/?do=rss",
+	"https://erucipe.net/links/?do=rss",
 	);
 ?>
