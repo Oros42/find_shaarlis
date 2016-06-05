@@ -216,5 +216,16 @@ $filter=array(
 	"http://shaarli.naeodeferra.fr/?do=rss",
 	"http://bookmarks.ipefixe.fr/?do=rss",
 	"https://goldy.furry.fr/shaarli/?do=rss",
+
+	/* HS */
+	"http://links.hostux.net/?do=rss",
+
+	/* real link https://share-link.olympe.in/?do=rss */
+	"https://share-link.olympe.in?do=rss",
+	"http://share-link.olympe.in?do=rss",
+	"http://share-link.olympe.in/?do=rss",
+
+	/* real link https://id-libre.org/shaarli/?do=rss */
+	"http://id-libre.org/shaarli/?do=rss",
 	);
 ?>
