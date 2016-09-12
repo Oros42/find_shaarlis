@@ -1,3 +1,12 @@
+Installation
+============
+
+```
+apt install php7.0-xml
+# ou
+apt-get install php5-xml
+```
+
 Où sont les shaarlis ?
 ======================
   
