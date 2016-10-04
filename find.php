@@ -48,7 +48,10 @@ function display_xml_error($error, $xml){
 }
 
 function my_file_get_contents($url){
-	return @file_get_contents($url, false, stream_context_create(array('http' => array('user_agent' => 'Mozilla/5.0 (Bot from https://github.com/Oros42/find_shaarlis)'))));
+	return @file_get_contents($url, false, stream_context_create(array(
+		'http' => array('user_agent' => 'Mozilla/5.0 (Bot from https://github.com/Oros42/find_shaarlis)'),
+		'ssl' => array('verify_peer' => false, 'verify_peer_name' => false)
+		)));
 }
 
 function print_msg($msg, $new_line=false){
