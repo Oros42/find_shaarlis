@@ -227,5 +227,31 @@ $filter=array(
 
 	/* real link https://id-libre.org/shaarli/?do=rss */
 	"http://id-libre.org/shaarli/?do=rss",
+
+	/* real link https://suumitsu.eu/links/?do=rss */
+	"https://root.suumitsu.eu/links/?do=rss",
+
+	/* real link https://links.green-effect.fr/?do=rss */
+	"http://links.green-effect.fr/?do=flux_rss?do=rss ",
+	"http://links.green-effect.fr?do=rss",
+
+	/* HS */
+	"https://nas.eownis.me/shaarli/?do=rss",
+	"https://yggz.org/Shaarli/?do=rss",
+	"https://eownis.myds.me/shaarli/?do=rss",
+	"https://lzko.fr/shaarli/?do=rss",
+	"https://links.gardouille.fr/?do=rss",
+	"http://toutetrien.hostzi.com/links/?do=rss",
+	"http://streisand.fr/shaarli?do=rss",
+	"https://streisand.fr/shaarli/?do=rss",
+	"http://stgfop.com/p/news/?do=rss",
+	"http://genma.free.fr/shaarli/?do=rss",
+	"https://www.korezian.net/liens/?do=rss",
+	"https://viperr.org/shaarli/?do=rss",
+
+	/* real link http://bookmarks.ecyseo.net/?do=rss */
+	"http://bookmarks.ecyseo.com?do=rss",
+	"http://bookmarks.ecyseo.net?do=rss",
+
 	);
 ?>
