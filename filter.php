@@ -253,5 +253,21 @@ $filter=array(
 	"http://bookmarks.ecyseo.com?do=rss",
 	"http://bookmarks.ecyseo.net?do=rss",
 
+	/* HS */
+	"http://www.nicolargo.com/links/?do=rss",
+	"https://links.sirc.at/?do=rss",
+	"https://shaarli.oatv.info/?do=rss",
+	"http://share.ohax.fr/?do=rss",
+	"http://links.tomcanac.com/?do=rss",
+	"https://nexen.netk.fr/shaarli/?do=rss",
+	"http://www.aredje.net/shaarli/?do=rss",
+	"https://inicoop.org/revuedepresse?do=rss",
+	"http://inicoop.org/revuedepresse?do=rss",
+	"http://viperr.org/shaarli/?do=rss",
+	"http://lzko.fr/shaarli/?do=rss",
+	"http://nexen.netk.fr/shaarli/?do=rss",
+
+	/* real link https://links.green-effect.fr/?do=rss */
+	"http://links.green-effect.fr/?do=flux_rss?do=rss",
 	);
 ?>
