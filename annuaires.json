@@ -3,6 +3,7 @@
 "http://river.hoa.ro/" : {"type":"river",  "is_active":1},
 "https://nexen.mkdir.fr/shaarli-river/" : {"type":"river",  "is_active":0},
 "http://petitetremalfaisant.eu/styx/" : {"type":"river",  "is_active":1},
+"https://river.libox.fr/" : {"type":"river",  "is_active":1},
 
 "http://river.hoa.ro/api/" : {"type":"river-api",  "is_active":1},
 "https://nexen.mkdir.fr/shaarli-api/" : {"type":"river-api",  "is_active":0},
