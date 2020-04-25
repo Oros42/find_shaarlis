@@ -37,6 +37,8 @@ Cela va créer 2-3 fichiers dans ./out/ avec la liste de tout les shaarlis trouv
 - shaarlis.opml 
 - shaarlis_HS.json si des shaarlis HS sont trouvés  
   
+Une copie des fichiers est dispo ici : https://github.com/Oros42/shaarlis_list
+  
 Ajout, modification ou suppression ?
 ====================================
 
