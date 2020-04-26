@@ -49,6 +49,7 @@ function display_xml_error($error, $xml){
 
 function my_file_get_contents($url){
 	return @file_get_contents($url, false, stream_context_create(array(
+		'socket' => array('bindto' => '0.0.0.0:0'), //because ipv6 is broken on some shaarli -_-
 		'http' => array('user_agent' => 'Mozilla/5.0 (Bot from https://github.com/Oros42/find_shaarlis)'),
 		'ssl' => array('verify_peer' => false, 'verify_peer_name' => false)
 		)));
@@ -272,7 +273,7 @@ if(!empty($annuaires)){
 
 				case 'annuaire' :
 					break;
-				
+
 				default:
 					break;
 			}
